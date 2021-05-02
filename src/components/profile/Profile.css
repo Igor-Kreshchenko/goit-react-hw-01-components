@@ -1,0 +1,53 @@
+.Profile{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 1px solid black;
+    margin-bottom: 30px;
+    background-color: white;
+    padding-top: 10px;
+}
+
+.Profile__description{
+  text-align: center;
+}
+
+.Profile__avatar{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.Profile__name{
+    padding: 0;
+    margin: 0;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.Profile__stats{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.Profile__stats-item{
+    display: flex;
+    flex-direction: column;
+    width: calc(100%/3);
+    padding: 15px;
+    outline: 1px solid grey;
+    text-align: center;
+    background-color: #e6e6fa;
+}
+
+.Profile__label{
+    margin-bottom: 10px;
+}
+
+.Profile__quantity{
+    font-weight: 700;
+}

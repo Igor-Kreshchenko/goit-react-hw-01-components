@@ -1,5 +1,6 @@
 import React from "react";
 
+
 import Profile from "./components/profile/Profile";
 import user from "./components/profile/user.json";
 
@@ -14,7 +15,7 @@ import transactions from './components/transaction-history/transactions.json';
 
 const App = () => {
   return (
-    <div>
+    <div >
       <Profile
         name={user.name}
         tag={user.tag}

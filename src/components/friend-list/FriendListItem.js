@@ -1,12 +1,13 @@
 import React from "react";
 import propTypes from "prop-types";
 import defaultImg from "../profile/defaultAvatar.svg";
+import './FriendList.css';
 
 const FriendListItem = ({ avatar, name, isOnline }) => (
   <>
-    <span class="status">{isOnline}</span>
-    <img class="avatar" src={avatar} alt="" width="48" />
-    <p class="name">{name}</p>
+    <span class="FriendList__status" style={{backgroundColor: isOnline ? "green" : "red"}}></span>
+    <img class="FriendList__avatar" src={avatar} alt="" width="48" />
+    <p class="FriendList__name">{name}</p>
   </>
 );
 
