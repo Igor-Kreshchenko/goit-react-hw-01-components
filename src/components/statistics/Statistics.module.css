@@ -1,0 +1,38 @@
+.statistics {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  margin-bottom: 30px;
+  outline: 1px solid black;
+}
+
+.title {
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+}
+
+.list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  color: black;
+  outline: 1px solid black;
+}
+
+.label {
+  margin-bottom: 10px;
+}

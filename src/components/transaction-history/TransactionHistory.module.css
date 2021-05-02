@@ -1,0 +1,27 @@
+.transactions {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid black;
+  background-color: white;
+}
+
+.head {
+  background-color: #5181a9;
+  color: white;
+  text-transform: uppercase;
+}
+
+.title {
+  padding: 10px;
+}
+
+.row:nth-child(2n) {
+  background-color: #c6e2ff;
+}
+
+.item {
+  padding: 10px;
+  text-align: center;
+  outline: 1px solid black;
+}
