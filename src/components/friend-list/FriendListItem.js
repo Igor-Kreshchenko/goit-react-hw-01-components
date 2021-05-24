@@ -1,5 +1,5 @@
 import React from 'react';
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import defaultImg from '../profile/defaultAvatar.svg';
 import styles from './FriendList.module.css';
 
@@ -19,9 +19,9 @@ FriendListItem.defaultProps = {
 };
 
 FriendListItem.propTypes = {
-  avatar: propTypes.string,
-  name: propTypes.string.isRequired,
-  isOnline: propTypes.bool.isRequired,
+  avatar: PropTypes.string,
+  name: PropTypes.string.isRequired,
+  isOnline: PropTypes.bool.isRequired,
 };
 
 export default FriendListItem;

@@ -1,6 +1,6 @@
 import React from 'react';
 import FriendListItem from './FriendListItem';
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import styles from './FriendList.module.css';
 
 const FriendList = ({ friends }) => (
@@ -14,8 +14,8 @@ const FriendList = ({ friends }) => (
 );
 
 FileList.propTypes = {
-  friends: propTypes.arrayOf(
-    propTypes.shape({ id: propTypes.number.isRequired }),
+  friends: PropTypes.arrayOf(
+    PropTypes.shape({ id: PropTypes.number.isRequired }),
   ).isRequired,
 };
 

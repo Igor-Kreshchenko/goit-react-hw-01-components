@@ -1,5 +1,5 @@
 import React from 'react';
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import Transaction from './Transaction';
 import styles from './TransactionHistory.module.css';
 
@@ -24,7 +24,7 @@ const TransactionHistory = ({ items }) => (
 );
 
 TransactionHistory.propTypes = {
-  items: propTypes.arrayOf(propTypes.shape({ id: propTypes.string.isRequired }))
+  items: PropTypes.arrayOf(PropTypes.shape({ id: PropTypes.string.isRequired }))
     .isRequired,
 };
 
