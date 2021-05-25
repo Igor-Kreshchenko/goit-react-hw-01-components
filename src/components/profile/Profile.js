@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import defaultImg from './defaultAvatar.svg';
+import defaultImg from '../../images/defaultAvatar.svg';
 import styles from './Profile.module.css';
 
 const Profile = ({
