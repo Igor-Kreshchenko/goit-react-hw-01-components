@@ -13,7 +13,7 @@ const FriendList = ({ friends }) => (
   </ul>
 );
 
-FileList.propTypes = {
+FriendList.propTypes = {
   friends: PropTypes.arrayOf(
     PropTypes.shape({ id: PropTypes.number.isRequired }),
   ).isRequired,

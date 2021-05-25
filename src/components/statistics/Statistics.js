@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import StatItem from './StatItem';
 import styles from './Statistics.module.css';
 
 const Statistics = ({ title, stats }) => (
@@ -17,8 +18,7 @@ const Statistics = ({ title, stats }) => (
             key={id}
             style={{ backgroundColor: randomColor }}
           >
-            <span className={styles.label}>{label}</span>
-            <span className={styles.percentage}>{percentage}%</span>
+            <StatItem label={label} percentage={percentage} />
           </li>
         );
       })}
@@ -35,8 +35,6 @@ Statistics.propTypes = {
   stats: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
-      label: PropTypes.string.isRequired,
-      percentage: PropTypes.number.isRequired,
     }),
   ).isRequired,
 };
