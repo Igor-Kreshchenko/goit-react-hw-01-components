@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import defaultImg from '../../images/defaultAvatar.svg';
 import styles from './FriendList.module.css';
 
-const FriendListItem = ({ avatar, name, isOnline, id }) => (
-  <li className={styles.item} key={id}>
+const FriendListItem = ({ avatar, name, isOnline }) => (
+  <li className={styles.item}>
     <span
       className={styles.status}
       style={{ backgroundColor: isOnline ? 'green' : 'red' }}
@@ -22,7 +22,6 @@ FriendListItem.propTypes = {
   avatar: PropTypes.string,
   name: PropTypes.string.isRequired,
   isOnline: PropTypes.bool.isRequired,
-  id: PropTypes.number.isRequired,
 };
 
 export default FriendListItem;
